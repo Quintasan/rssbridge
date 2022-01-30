@@ -29,4 +29,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "zeitwerk", "~> 2.5.4"
+  spec.add_dependency "tty-logger", "~> 0.6.0"
+
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rubocop", "~> 1.21"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry-byebug"
 end
