@@ -2,7 +2,7 @@
 
 require 'zeitwerk'
 loader = Zeitwerk::Loader.for_gem
-loader.log!
+loader.log! if ENV['ENABLE_ZEITWERK_LOGGING']
 loader.setup
 
 Bundler.require(:default, :development)
